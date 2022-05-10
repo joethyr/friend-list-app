@@ -1,0 +1,8 @@
+<div class="container-fluid py-5 bg-light">
+  <h1 class="display-5 fw-bold"><%= @friend.first_name %> <%= @friend.last_name %></h1>
+  <br>
+  <p><strong>Phone:</strong> <%= @friend.phone %> | <strong>Email:</strong> <%= @friend.email %></p>
+  <!-- <br> -->
+  <%= link_to 'Edit', edit_friend_path(@friend), class: 'btn btn-primary' %>
+  <%= link_to 'Back', friends_path, class: 'btn btn-primary' %>
+</div>
